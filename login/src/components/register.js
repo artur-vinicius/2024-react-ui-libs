@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Register = () => {
   const [email, setEmail] = useState('');
@@ -23,7 +24,6 @@ const Register = () => {
     const data = await response.json();
     if (response.ok) {
       console.log('Cadastro realizado com sucesso!');
-      // Redirecionar ou mostrar mensagem de sucesso
     } else {
       setErrorMessage(data.message);
     }
@@ -64,6 +64,13 @@ const Register = () => {
         >
           Cadastrar
         </button>
+
+        <p className="mt-4 text-center">
+          Já tem uma conta?{' '}
+          <Link to="/" className="text-purple-600 hover:underline">
+            Faça login
+          </Link>
+        </p>
       </div>
     </div>
   );
