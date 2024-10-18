@@ -3,3 +3,6 @@
 Grupo:
 - **Artur Vinícius de Macedo Torres**;
 - **João Ricardo Fernandes de Almeida**.
+
+Framework:
+**Tailwind CSS**
