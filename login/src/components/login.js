@@ -18,7 +18,6 @@ const Login = () => {
 
     const data = await response.json();
     if (response.ok) {
-      // Salvar o token no localStorage ou sessionStorage
       if (rememberMe) {
         localStorage.setItem('token', data.token);
       } else {
@@ -26,7 +25,7 @@ const Login = () => {
       }
       console.log('Login bem-sucedido!');
     } else {
-      setErrorMessage(data.message); // Exibir erro
+      setErrorMessage(data.message);
     }
   };
 
