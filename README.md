@@ -2,7 +2,7 @@
 
 ## Grupo:
 
-| [<img align="center" src="https://avatars.githubusercontent.com/u/93359952?v=4&size=64" width=150><br><sub >Artur Vinícius</sub>](https://github.com/artur-vinicius) | [<img src="https://avatars.githubusercontent.com/u/101953125?v=4" width=150><br><sub>João Ricardo</sub>](https://github.com/joao-rick) |
+| [<img align="center" src="https://avatars.githubusercontent.com/u/93359952?v=4" width=150><br><sub >Artur Vinícius</sub>](https://github.com/artur-vinicius) | [<img src="https://avatars.githubusercontent.com/u/101953125?v=4" width=150><br><sub>João Ricardo</sub>](https://github.com/joao-rick) |
 | :---: | :---: |
 
 ## Framework:
