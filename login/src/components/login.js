@@ -1,11 +1,18 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import eyeIcon from '../img/eye-icon.png';
+import eyeSlash from '../img/eye-slash.png';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [rememberMe, setRememberMe] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
 
   const handleLogin = async () => {
     const response = await fetch('http://localhost:5000/api/auth/login', {
@@ -43,13 +50,22 @@ const Login = () => {
           placeholder="Email"
           className="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:border-blue-500"
         />
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="Senha"
-          className="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:border-blue-500"
-        />
+        <div className="relative">
+          <input
+            type={showPassword ? 'text' : 'password'}
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="Senha"
+            className="w-full p-3 pr-10 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+          />
+          <img
+            src={showPassword ? eyeIcon : eyeSlash}
+            alt="Toggle Password Visibility"
+            onClick={togglePasswordVisibility}
+            className="absolute top-1/2 right-3 transform -translate-y-1/2 cursor-pointer"
+            style={{ width: '20px', height: '20px' }}
+          />
+        </div>
         <label className="flex items-center mb-4">
           <input
             type="checkbox"
