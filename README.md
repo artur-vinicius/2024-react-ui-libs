@@ -9,6 +9,26 @@
 | [<img align="center" src="https://logowik.com/content/uploads/images/tailwind-css3232.logowik.com.webp" width=150><br><sub >Tailwind CSS</sub>](https://tailwindcss.com) |
 | :---: |
 
+# Instalação:
+
+Instale as dependências do Tailwind CSS:
+```bash
+npm install -D tailwindcss postcss autoprefixer
+```
+
+Crie o arquivo de configuração do Tailwind:
+
+```bash
+npx tailwindcss init
+```
+
+Instalar o Tailwind:
+
+```bash
+npm install @tailwindui/react
+```
+
+
 ## Executar:
 ```bash
 $ npm install
