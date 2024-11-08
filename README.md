@@ -6,14 +6,14 @@
 | :---: | :---: |
 
 ## Framework:
-| [<img align="center" src="https://logowik.com/content/uploads/images/tailwind-css3232.logowik.com.webp" width=150><br><sub >Tailwind CSS</sub>](https://tailwindcss.com) |
+| [<img align="center" src="https://logowik.com/content/uploads/images/tailwind-css3232.logowik.com.webp" width=150><br><sub >Tailwind UI</sub>](https://tailwindcss.com) |
 | :---: |
 
 # Instalação:
 
 Instale as dependências do Tailwind CSS:
 ```bash
-npm install -D tailwindcss postcss autoprefixer
+npm install -D tailwindcss
 ```
 
 Crie o arquivo de configuração do Tailwind:
